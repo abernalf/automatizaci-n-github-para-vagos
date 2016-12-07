@@ -13,6 +13,14 @@ def run_command(cmd):
     print 'Output:'
     print text
     print
+volcado = sys.argv
+commit = ' '
+ind = 1
+tam = len(volcado)
+for i in range (1,tam):
+    volcado[ind]
+    commit = commit +' '+volcado[ind]
+    ind = ind +1;
 
 run_command('git add .')
 run_command('git commit -m '+ sys.argv[1]+'')
