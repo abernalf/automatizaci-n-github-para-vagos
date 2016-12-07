@@ -24,6 +24,6 @@ for i in range (1,tam):
 
 
 run_command('git add .')
-run_command('git commit -m '+ commit+'')
+run_command('git commit -m "'+ commit+'"')
 run_command('git push')
 run_command('echo "LISTO"')
