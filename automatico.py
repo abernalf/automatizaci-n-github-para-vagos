@@ -14,7 +14,7 @@ def run_command(cmd):
     print text
     print
 volcado = sys.argv
-commit = ' '
+commit = ''
 ind = 1
 tam = len(volcado)
 for i in range (1,tam):
@@ -22,7 +22,8 @@ for i in range (1,tam):
     commit = commit +' '+volcado[ind]
     ind = ind +1;
 
+
 run_command('git add .')
-run_command('git commit -m '+ sys.argv[1]+'')
+run_command('git commit -m '+ commit+'')
 run_command('git push')
 run_command('echo "LISTO"')
